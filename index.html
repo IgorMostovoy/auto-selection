@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 </head>
 
 <body>
@@ -24,22 +25,23 @@
               <button class="header__burger-btn">
                 <span></span><span></span><span></span>
               </button>
-
-              <div class="header__logo">
-                <a class="logo" href="#">
-                  <img class="logo__img" src="images/logo.svg" alt="">
-                </a>
-                <p class="header__logo-text">Мы подберём для вас лучший автомобиль</p>
-              </div>
-              <div class="header__callback">
-                <div class="header__callback-tel">
-                  <a class="header__callback-tel-link" href="tel:+79880830923">8 (988) 083-09-23</a>
-                  <p class="header__callback-time">с 8:00 до 21:00 без выходных</p>
+              <div class="header__top-logo-callback">
+                <div class="header__logo">
+                  <a class="logo" href="#">
+                    <img class="logo__img" src="images/logo.svg" alt="">
+                  </a>
+                  <p class="header__logo-text">Мы подберём для вас лучший автомобиль</p>
                 </div>
-
+                <div class="header__callback">
+                  <div class="header__callback-tel">
+                    <a class="header__callback-tel-link" href="tel:+79880830923">8 (988) 083-09-23</a>
+                    <p class="header__callback-time">с 8:00 до 21:00 без выходных</p>
+                  </div>
+                </div>
                 <button class="popup__button header__callback-btn">Заказать звонок<span class="flare"></span></button>
               </div>
             </div>
+
             <div class="header__top-under">
               <nav class="menu">
                 <ul class="menu__list">
@@ -99,8 +101,8 @@
               </li>
             </ul>
             <div class=" header__content-btn">
-              <button class="popup__button header__choose-btn">подобрать авто</button>
-              <button class="header__services-btn">наши услуги</button>
+              <button class="popup__button header__button header__choose-btn">подобрать авто</button>
+              <button class=" header__button header__services-btn">наши услуги</button>
             </div>
 
           </div>
@@ -209,7 +211,7 @@
               <div class="check__phone-img">
                 <img src="images/svg/swiper-icon/steering-wheel.svg" alt="auto">
               </div>
-              <div class="check__phone-text">
+              <div class="check__phone-text check__phone-text--wheel">
                 <p>Рулевое управление</p>
               </div>
             </div>
@@ -397,6 +399,7 @@
 
           </div>
         </div>
+      </div>
     </section>
 
 
@@ -453,76 +456,78 @@
           <div class="cost__swiper swiper">
 
             <div class="cost__swiper-wrapper swiper-wrapper">
-              
-                <div class="cost__swiper-slide swiper-slide">
-                  <div class="cost__item">
-                    <img src="images/cost-1.jpg" alt="" class="cost__img">
-                    <div class="cost__list">
-                      <h3 class="cost__subtitle">Выездная проверка автомобиля</h3>
-                      <ul class="cost__text-list">
-                        <li class="cost__text-list-item">Проверка по базам ГИБДД</li>
-                        <li class="cost__text-list-item">Проверка кузова автомобиля</li>
-                        <li class="cost__text-list-item">Предварительная оценка корректности указанного пробега</li>
-                        <li class="cost__text-list-item">Оценка действительной стоимости автомобиля</li>
-                        <li class="cost__text-list-item">Оценка целесообразности покупки авто</li>
-                        <li class="cost__text-list-item">Торг с продавцом в пользу клиента</li>
-                      </ul>
-                      <div class="cost__price-buttons cost__price-buttons-check">
-                        <div class="cost__price-text">от 2 500</div>
-                        <button class="popup__button cost__btn cost__btn-callback">Заказать</button>
-                      </div>
-                    </div>
+
+              <div class="cost__swiper-slide swiper-slide">
+                <div class="cost__item">
+                  <img src="images/cost-1.jpg" alt="" class="cost__img">
+                  <div class="cost__list">
+                    <h3 class="cost__subtitle">Выездная проверка автомобиля</h3>
+                    <ul class="cost__text-list">
+                      <li class="cost__text-list-item">Проверка по базам ГИБДД</li>
+                      <li class="cost__text-list-item">Проверка кузова автомобиля</li>
+                      <li class="cost__text-list-item">Предварительная оценка корректности указанного пробега</li>
+                      <li class="cost__text-list-item">Оценка действительной стоимости автомобиля</li>
+                      <li class="cost__text-list-item">Оценка целесообразности покупки авто</li>
+                      <li class="cost__text-list-item">Торг с продавцом в пользу клиента</li>
+                    </ul>
+                  </div>
+                  <div class="cost__price-buttons">
+                    <div class="cost__price-text">от 2 500</div>
+                    <button class="popup__button cost__btn">Заказать</button>
                   </div>
                 </div>
-                <div class="cost__swiper-slide swiper-slide">
-                  <div class="cost__item">
-                    <img src="images/cost-2.jpg" alt="" class="cost__img">
-                    <div class="cost__list">
-                      <h3 class="cost__subtitle">Автоэксперт на день</h3>
-                      <ul class="cost__text-list">
-                        <li class="cost__text-list-item">Преимущества выездной диагностики</li>
-                        <li class="cost__text-list-item">Неограниченное количество просматриваемых машин</li>
-                        <li class="cost__text-list-item">Поиск и объезд продавцов вместе с клиентом</li>
-                        <li class="cost__text-list-item">Сопровождение квалифицированным специалистом</li>
-                        <li class="cost__text-list-item">Проверим автомобиль более чем по 100 параметрам</li>
-                        <li class="cost__text-list-item">Если удастся найти транспортное средство, наш автоэксперт
-                          поможет с
-                          оформлением сделки</li>
-                      </ul>
-                      <div class="cost__price-buttons cost__price-buttons-allday">
-                        <div class="cost__price-text">от 10 000</div>
-                        <button class="popup__button cost__btn cost__btn-callback">Заказать</button>
-                      </div>
-                    </div>
+              </div>
+              <div class="cost__swiper-slide swiper-slide">
+                <div class="cost__item">
+                  <img src="images/cost-2.jpg" alt="" class="cost__img">
+                  <div class="cost__list">
+                    <h3 class="cost__subtitle">Автоэксперт на день</h3>
+                    <ul class="cost__text-list">
+                      <li class="cost__text-list-item">Преимущества выездной диагностики</li>
+                      <li class="cost__text-list-item">Неограниченное количество просматриваемых машин</li>
+                      <li class="cost__text-list-item">Поиск и объезд продавцов вместе с клиентом</li>
+                      <li class="cost__text-list-item">Сопровождение квалифицированным специалистом</li>
+                      <li class="cost__text-list-item">Проверим автомобиль более чем по 100 параметрам</li>
+                      <li class="cost__text-list-item">Если удастся найти транспортное средство, наш автоэксперт
+                        поможет с
+                        оформлением сделки</li>
+                    </ul>
+
+                  </div>
+                  <div class="cost__price-buttons">
+                    <div class="cost__price-text">от 10 000</div>
+                    <button class="popup__button cost__btn">Заказать</button>
                   </div>
                 </div>
-                <div class="cost__swiper-slide swiper-slide">
-                  <div class="cost__item">
-                    <img src="images/cost-3.jpeg" alt="" class="cost__img">
-                    <div class="cost__list">
-                      <h3 class="cost__subtitle">Подбор автомобиля под ключ</h3>
-                      <ul class="cost__text-list">
-                        <li class="cost__text-list-item">Поиск и проверка автомобиля проводятся профессиональными
-                          экспертами
-                        </li>
-                        <li class="cost__text-list-item">При подборе мы учитываем все требования и нюансы</li>
-                        <li class="cost__text-list-item">Клиент получает ежедневный отчет о проверенных автомобилях</li>
-                        <li class="cost__text-list-item">Мы подбираем автомобиль до окончательного варианта, подходящего
-                          по
-                          всем
-                          параметрам</li>
-                        <li class="cost__text-list-item">Наш специалист будет сопровождать вас на всех этапах заключения
-                          сделки
-                          купли-продажи автомобиля и окажет помощь в любых вопросах</li>
-                      </ul>
-                      <div class="cost__price-buttons  cost__price-buttons-onkey">
-                        <div class="cost__price-text">от 20 000</div>
-                        <button class="popup__button cost__btn cost__btn-callback">Заказать</button>
-                      </div>
-                    </div>
+              </div>
+              <div class="cost__swiper-slide swiper-slide">
+                <div class="cost__item">
+                  <img src="images/cost-3.jpeg" alt="" class="cost__img">
+                  <div class="cost__list">
+                    <h3 class="cost__subtitle">Подбор автомобиля под ключ</h3>
+                    <ul class="cost__text-list">
+                      <li class="cost__text-list-item">Поиск и проверка автомобиля проводятся профессиональными
+                        экспертами
+                      </li>
+                      <li class="cost__text-list-item">При подборе мы учитываем все требования и нюансы</li>
+                      <li class="cost__text-list-item">Клиент получает ежедневный отчет о проверенных автомобилях</li>
+                      <li class="cost__text-list-item">Мы подбираем автомобиль до окончательного варианта, подходящего
+                        по
+                        всем
+                        параметрам</li>
+                      <li class="cost__text-list-item">Наш специалист будет сопровождать вас на всех этапах заключения
+                        сделки
+                        купли-продажи автомобиля и окажет помощь в любых вопросах</li>
+                    </ul>
+
+                  </div>
+                  <div class="cost__price-buttons ">
+                    <div class="cost__price-text">от 20 000</div>
+                    <button class="popup__button cost__btn ">Заказать</button>
                   </div>
                 </div>
-              
+              </div>
+
             </div>
 
             <div class="cost__swiper-pagination swiper-pagination"></div>
@@ -533,6 +538,7 @@
 
 
           <div class="cost__items">
+
             <div class="cost__item">
               <img src="images/cost-1.jpg" alt="" class="cost__img">
               <div class="cost__list">
@@ -545,13 +551,10 @@
                   <li class="cost__text-list-item">Оценка целесообразности покупки авто</li>
                   <li class="cost__text-list-item">Торг с продавцом в пользу клиента</li>
                 </ul>
-                <div class="cost__price-buttons cost__price-buttons-check">
-                  <div class="cost__price-text">от 2 500</div>
-
-                  <button class="popup__button cost__btn cost__btn-callback">Заказать</button>
-
-
-                </div>
+              </div>
+              <div class="cost__price-buttons">
+                <div class="cost__price-text">от 2 500</div>
+                <button class="popup__button cost__btn">Заказать</button>
               </div>
             </div>
 
@@ -568,15 +571,14 @@
                   <li class="cost__text-list-item">Если удастся найти транспортное средство, наш автоэксперт поможет с
                     оформлением сделки</li>
                 </ul>
-                <div class="cost__price-buttons cost__price-buttons-allday">
-                  <div class="cost__price-text">от 10 000</div>
 
-                  <button class="popup__button cost__btn cost__btn-callback">Заказать</button>
-
-
-                </div>
+              </div>
+              <div class="cost__price-buttons">
+                <div class="cost__price-text">от 10 000</div>
+                <button class="popup__button cost__btn">Заказать</button>
               </div>
             </div>
+
 
             <div class="cost__item">
               <img src="images/cost-3.jpeg" alt="" class="cost__img">
@@ -594,15 +596,14 @@
                     сделки
                     купли-продажи автомобиля и окажет помощь в любых вопросах</li>
                 </ul>
-                <div class="cost__price-buttons  cost__price-buttons-onkey">
-                  <div class="cost__price-text">от 20 000</div>
 
-                  <button class="popup__button cost__btn cost__btn-callback">Заказать</button>
-
-
-                </div>
+              </div>
+              <div class="cost__price-buttons">
+                <div class="cost__price-text">от 20 000</div>
+                <button class="popup__button cost__btn">Заказать</button>
               </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -767,22 +768,22 @@
           <h2 class="title diagram-pie__title">Статистика вторичного рынка</h2>
           <div class="diagram-pie__items">
             <div class="diagram-pie__item-wrapper">
-              <div class="diagram-pie__item" style="--percentage:65;--border-thickness:15px;--main-color:#cb333b">65%
+              <div class="diagram-pie__item" style="--percentage:65;--border-thickness:10px;--main-color:#cb333b">65%
               </div>
               <p class="diagram-pie__item-text">Битые автомобили</p>
             </div>
             <div class="diagram-pie__item-wrapper">
-              <div class="diagram-pie__item" style="--percentage:23;--border-thickness:15px;--main-color:#cb333b">23%
+              <div class="diagram-pie__item" style="--percentage:23;--border-thickness:10px;--main-color:#cb333b">23%
               </div>
               <p class="diagram-pie__item-text">Ограничения на регистрационные действия в ГИБДД</p>
             </div>
             <div class="diagram-pie__item-wrapper">
-              <div class="diagram-pie__item" style="--percentage:33;--border-thickness:15px;--main-color:#cb333b">33%
+              <div class="diagram-pie__item" style="--percentage:33;--border-thickness:10px;--main-color:#cb333b">33%
               </div>
               <p class="diagram-pie__item-text">Автомобили после такси</p>
             </div>
             <div class="diagram-pie__item-wrapper">
-              <div class="diagram-pie__item" style="--percentage:15;--border-thickness:15px;--main-color:#cb333b">15%
+              <div class="diagram-pie__item" style="--percentage:15;--border-thickness:10px;--main-color:#cb333b">15%
               </div>
               <p class="diagram-pie__item-text">Восстановленные из 2-х половин</p>
             </div>
@@ -802,8 +803,10 @@
 
                 <div class="done-slider__slide swiper-slide">
                   <div class="done-slider__slide-inner">
-                    <img class="done-slider__img" style="width:325px; height:auto"
-                      src="images/done-solyaris2013/done1.JPG" alt="Hunday Solaris">
+                    <div class="done-slider__img-wrapper">
+                      <img class="done-slider__img" style="width:325px; height:auto"
+                        src="images/done-solyaris2013/done1.JPG" alt="Hunday Solaris">
+                    </div>
                     <div class="done-slide__describe">
                       <h3 class="done-slide__title">Hunday Solaris</h3>
 
@@ -820,32 +823,35 @@
                     </div>
                   </div>
                   <div class="done-slider__perview-items">
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-solyaris2013/done1.JPG" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-solyaris2013/done2.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-solyaris2013/done3.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-solyaris2013/done4.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-solyaris2013/done5.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-solyaris2013/done6.jpeg" style="width: 50px; height: auto;">
-                    </a>
+
+                    <img class="done-slider__perviews-item" src="images/done-solyaris2013/done1.JPG"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-solyaris2013/done2.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-solyaris2013/done3.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-solyaris2013/done4.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-solyaris2013/done5.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-solyaris2013/done6.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
                   </div>
                 </div>
 
 
                 <div class="done-slider__slide swiper-slide">
                   <div class="done-slider__slide-inner">
-                    <img class="done-slider__img" style="width:325px; height:auto"
-                      src="images/done-sportage2021/done1.jpeg" alt="Hunday Solaris">
+                    <div class="done-slider__img-wrapper">
+                      <img class="done-slider__img" style="width:325px; height:auto"
+                        src="images/done-sportage2021/done1.jpeg" alt="Kia Sportage">
+                    </div>
                     <div class="done-slide__describe">
                       <h3 class="done-slide__title">Kia Sportage</h3>
                       <div class="done-slide__points">
@@ -861,31 +867,34 @@
                     </div>
                   </div>
                   <div class="done-slider__perview-items">
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-sportage2021/done1.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-sportage2021/done2.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-sportage2021/done3.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-sportage2021/done4.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-sportage2021/done5.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-sportage2021/done6.jpeg" style="width: 50px; height: auto;">
-                    </a>
+
+                    <img class="done-slider__perviews-item" src="images/done-sportage2021/done1.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-sportage2021/done2.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-sportage2021/done3.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-sportage2021/done4.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-sportage2021/done5.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-sportage2021/done6.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
                   </div>
                 </div>
 
                 <div class="done-slider__slide swiper-slide">
                   <div class="done-slider__slide-inner">
-                    <img class="done-slider__img" style="width:325px; height:auto" src="images/done-bmw32020/done1.jpeg"
-                      alt="Hunday Solaris">
+                    <div class="done-slider__img-wrapper">
+                      <img class="done-slider__img" style="width:325px; height:auto"
+                        src="images/done-bmw32020/done1.jpeg" alt="BMW 3">
+                    </div>
                     <div class="done-slide__describe">
                       <h3 class="done-slide__title">BMW 3</h3>
                       <div class="done-slide__points">
@@ -901,31 +910,34 @@
                     </div>
                   </div>
                   <div class="done-slider__perview-items">
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-bmw32020/done1.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-bmw32020/done2.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-bmw32020/done3.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-bmw32020/done4.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-bmw32020/done5.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-bmw32020/done6.jpeg" style="width: 50px; height: auto;">
-                    </a>
+
+                    <img class="done-slider__perviews-item" src="images/done-bmw32020/done1.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-bmw32020/done2.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-bmw32020/done3.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-bmw32020/done4.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-bmw32020/done5.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-bmw32020/done6.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
                   </div>
                 </div>
 
                 <div class="done-slider__slide swiper-slide">
                   <div class="done-slider__slide-inner">
-                    <img class="done-slider__img" style="width:325px; height:auto" src="images/done-mbc2017/done1.jpeg"
-                      alt="Hunday Solaris">
+                    <div class="done-slider__img-wrapper">
+                      <img class="done-slider__img" style="width:325px; height:auto"
+                        src="images/done-mbc2017/done1.jpeg" alt="Mercedes-Benz C-класс">
+                    </div>
                     <div class="done-slide__describe">
                       <h3 class="done-slide__title">Mercedes-Benz C-класс</h3>
                       <div class="done-slide__points">
@@ -941,31 +953,34 @@
                     </div>
                   </div>
                   <div class="done-slider__perview-items">
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-mbc2017/done1.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-mbc2017/done2.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-mbc2017/done3.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-mbc2017/done4.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-mbc2017/done5.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-mbc2017/done6.jpeg" style="width: 50px; height: auto;">
-                    </a>
+
+                    <img class="done-slider__perviews-item" src="images/done-mbc2017/done1.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-mbc2017/done2.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-mbc2017/done3.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-mbc2017/done4.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-mbc2017/done5.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-mbc2017/done6.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
                   </div>
                 </div>
 
                 <div class="done-slider__slide swiper-slide">
                   <div class="done-slider__slide-inner">
-                    <img class="done-slider__img" style="width:325px; height:auto" src="images/done-ceed2018/done1.jpeg"
-                      alt="Hunday Solaris">
+                    <div class="done-slider__img-wrapper">
+                      <img class="done-slider__img" style="width:325px; height:auto"
+                        src="images/done-ceed2018/done1.jpeg" alt="Kia Ceed">
+                    </div>
                     <div class="done-slide__describe">
                       <h3 class="done-slide__title">Kia Ceed</h3>
                       <div class="done-slide__points">
@@ -981,31 +996,34 @@
                     </div>
                   </div>
                   <div class="done-slider__perview-items">
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-ceed2018/done1.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-ceed2018/done2.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-ceed2018/done3.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-ceed2018/done4.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-ceed2018/done5.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-ceed2018/done6.jpeg" style="width: 50px; height: auto;">
-                    </a>
+
+                    <img class="done-slider__perviews-item" src="images/done-ceed2018/done1.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-ceed2018/done2.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-ceed2018/done3.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-ceed2018/done4.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-ceed2018/done5.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-ceed2018/done6.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
                   </div>
                 </div>
 
                 <div class="done-slider__slide swiper-slide">
                   <div class="done-slider__slide-inner">
-                    <img class="done-slider__img" style="width:325px; height:auto"
-                      src="images/done-octavia2019/done1.jpeg" alt="Hunday Solaris">
+                    <div class="done-slider__img-wrapper">
+                      <img class="done-slider__img" style="width:325px; height:auto"
+                        src="images/done-octavia2019/done1.jpeg" alt="Skoda Octavia">
+                    </div>
                     <div class="done-slide__describe">
                       <h3 class="done-slide__title">Skoda Octavia</h3>
                       <div class="done-slide__points">
@@ -1021,24 +1039,25 @@
                     </div>
                   </div>
                   <div class="done-slider__perview-items">
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-octavia2019/done1.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-octavia2019/done2.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-octavia2019/done3.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-octavia2019/done4.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-octavia2019/done5.jpeg" style="width: 50px; height: auto;">
-                    </a>
-                    <a class="done-slider__perviews-item" href="#">
-                      <img src="images/done-octavia2019/done6.jpeg" style="width: 50px; height: auto;">
-                    </a>
+
+                    <img class="done-slider__perviews-item" src="images/done-octavia2019/done1.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-octavia2019/done2.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-octavia2019/done3.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-octavia2019/done4.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-octavia2019/done5.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
+                    <img class="done-slider__perviews-item" src="images/done-octavia2019/done6.jpeg"
+                      style="width: 50px; height: auto;" alt="auto">
+
                   </div>
                 </div>
 
@@ -1052,8 +1071,10 @@
 
               <div class="done-slider__slide swiper-slide">
                 <div class="done-slider__slide-inner">
-                  <img class="done-slider__img" style="width:325px; height:auto"
-                    src="images/done-solyaris2013/done1.JPG" alt="Hunday Solaris">
+                  <div class="done-slider__img-wrapper">
+                    <img class="done-slider__img" style="width:325px; height:auto"
+                      src="images/done-solyaris2013/done1.JPG" alt="Hunday Solaris">
+                  </div>
                   <div class="done-slide__describe">
                     <h3 class="done-slide__title">Hunday Solaris</h3>
 
@@ -1070,32 +1091,38 @@
                   </div>
                 </div>
                 <div class="done-slider__perview-items">
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-solyaris2013/done1.JPG" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-solyaris2013/done2.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-solyaris2013/done3.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-solyaris2013/done4.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-solyaris2013/done5.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-solyaris2013/done6.jpeg" style="width: 50px; height: auto;">
-                  </a>
+                  <img class="done-slider__perviews-item" src="images/done-solyaris2013/done1.JPG"
+                    style="width: 50px; height: auto;" alt="auto">
+
+                  <img class="done-slider__perviews-item" src="images/done-solyaris2013/done2.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+
+                  <img class="done-slider__perviews-item" src="images/done-solyaris2013/done3.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+
+                  <img class="done-slider__perviews-item" src="images/done-solyaris2013/done4.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+
+                  <img class="done-slider__perviews-item" src="images/done-solyaris2013/done5.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+
+                  <img class="done-slider__perviews-item" src="images/done-solyaris2013/done6.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
                 </div>
               </div>
 
 
               <div class="done-slider__slide swiper-slide">
                 <div class="done-slider__slide-inner">
-                  <img class="done-slider__img" style="width:325px; height:auto"
-                    src="images/done-sportage2021/done1.jpeg" alt="Hunday Solaris">
+                  <div class="done-slider__img-wrapper">
+                    <img class="done-slider__img" style="width:325px; height:auto"
+                      src="images/done-sportage2021/done1.jpeg" alt="Hunday Solaris">
+                  </div>
                   <div class="done-slide__describe">
                     <h3 class="done-slide__title">Kia Sportage</h3>
                     <div class="done-slide__points">
@@ -1111,31 +1138,35 @@
                   </div>
                 </div>
                 <div class="done-slider__perview-items">
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-sportage2021/done1.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-sportage2021/done2.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-sportage2021/done3.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-sportage2021/done4.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-sportage2021/done5.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-sportage2021/done6.jpeg" style="width: 50px; height: auto;">
-                  </a>
+
+                  <img class="done-slider__perviews-item" src="images/done-sportage2021/done1.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+
+                  <img class="done-slider__perviews-item" src="images/done-sportage2021/done2.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+                  <img class="done-slider__perviews-item" src="images/done-sportage2021/done3.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+                  <img class="done-slider__perviews-item" src="images/done-sportage2021/done4.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+                  <img class="done-slider__perviews-item" src="images/done-sportage2021/done5.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+                  <img class="done-slider__perviews-item" src="images/done-sportage2021/done6.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
                 </div>
               </div>
 
               <div class="done-slider__slide swiper-slide">
                 <div class="done-slider__slide-inner">
-                  <img class="done-slider__img" style="width:325px; height:auto" src="images/done-bmw32020/done1.jpeg"
-                    alt="Hunday Solaris">
+                  <div class="done-slider__img-wrapper">
+                    <img class="done-slider__img" style="width:325px; height:auto" src="images/done-bmw32020/done1.jpeg"
+                      alt="BMW 3">
+                  </div>
                   <div class="done-slide__describe">
                     <h3 class="done-slide__title">BMW 3</h3>
                     <div class="done-slide__points">
@@ -1151,31 +1182,39 @@
                   </div>
                 </div>
                 <div class="done-slider__perview-items">
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-bmw32020/done1.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-bmw32020/done2.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-bmw32020/done3.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-bmw32020/done4.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-bmw32020/done5.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-bmw32020/done6.jpeg" style="width: 50px; height: auto;">
-                  </a>
+
+                  <img class="done-slider__perviews-item" src="images/done-bmw32020/done1.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+
+                  <img class="done-slider__perviews-item" src="images/done-bmw32020/done2.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+
+                  <img class="done-slider__perviews-item" src="images/done-bmw32020/done3.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+
+                  <img class="done-slider__perviews-item" src="images/done-bmw32020/done4.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+
+                  <img class="done-slider__perviews-item" src="images/done-bmw32020/done5.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+
+                  <img class="done-slider__perviews-item" src="images/done-bmw32020/done6.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
                 </div>
               </div>
 
               <div class="done-slider__slide swiper-slide">
                 <div class="done-slider__slide-inner">
-                  <img class="done-slider__img" style="width:325px; height:auto" src="images/done-mbc2017/done1.jpeg"
-                    alt="Hunday Solaris">
+                  <div class="done-slider__img-wrapper">
+                    <img class="done-slider__img" style="width:325px; height:auto" src="images/done-mbc2017/done1.jpeg"
+                      alt="Mercedes-Benz">
+                  </div>
                   <div class="done-slide__describe">
                     <h3 class="done-slide__title">Mercedes-Benz C-класс</h3>
                     <div class="done-slide__points">
@@ -1191,31 +1230,34 @@
                   </div>
                 </div>
                 <div class="done-slider__perview-items">
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-mbc2017/done1.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-mbc2017/done2.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-mbc2017/done3.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-mbc2017/done4.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-mbc2017/done5.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-mbc2017/done6.jpeg" style="width: 50px; height: auto;">
-                  </a>
+
+                  <img class="done-slider__perviews-item" src="images/done-mbc2017/done1.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+                  <img class="done-slider__perviews-item" src="images/done-mbc2017/done2.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+                  <img class="done-slider__perviews-item" src="images/done-mbc2017/done3.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+                  <img class="done-slider__perviews-item" src="images/done-mbc2017/done4.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+                  <img class="done-slider__perviews-item" src="images/done-mbc2017/done5.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+                  <img class="done-slider__perviews-item" src="images/done-mbc2017/done6.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
                 </div>
               </div>
 
               <div class="done-slider__slide swiper-slide">
                 <div class="done-slider__slide-inner">
-                  <img class="done-slider__img" style="width:325px; height:auto" src="images/done-ceed2018/done1.jpeg"
-                    alt="Hunday Solaris">
+                  <div class="done-slider__img-wrapper">
+                    <img class="done-slider__img" style="width:325px; height:auto" src="images/done-ceed2018/done1.jpeg"
+                      alt="Kia Ceed">
+                  </div>
                   <div class="done-slide__describe">
                     <h3 class="done-slide__title">Kia Ceed</h3>
                     <div class="done-slide__points">
@@ -1231,31 +1273,34 @@
                   </div>
                 </div>
                 <div class="done-slider__perview-items">
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-ceed2018/done1.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-ceed2018/done2.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-ceed2018/done3.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-ceed2018/done4.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-ceed2018/done5.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-ceed2018/done6.jpeg" style="width: 50px; height: auto;">
-                  </a>
+
+                  <img class="done-slider__perviews-item" src="images/done-ceed2018/done1.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+                  <img class="done-slider__perviews-item" src="images/done-ceed2018/done2.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+                  <img class="done-slider__perviews-item" src="images/done-ceed2018/done3.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+                  <img class="done-slider__perviews-item" src="images/done-ceed2018/done4.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+                  <img class="done-slider__perviews-item" src="images/done-ceed2018/done5.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+                  <img class="done-slider__perviews-item" src="images/done-ceed2018/done6.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
                 </div>
               </div>
 
               <div class="done-slider__slide swiper-slide">
                 <div class="done-slider__slide-inner">
-                  <img class="done-slider__img" style="width:325px; height:auto"
-                    src="images/done-octavia2019/done1.jpeg" alt="Hunday Solaris">
+                  <div class="done-slider__img-wrapper">
+                    <img class="done-slider__img" style="width:325px; height:auto"
+                      src="images/done-octavia2019/done1.jpeg" alt="Hunday Solaris">
+                  </div>
                   <div class="done-slide__describe">
                     <h3 class="done-slide__title">Skoda Octavia</h3>
                     <div class="done-slide__points">
@@ -1271,24 +1316,25 @@
                   </div>
                 </div>
                 <div class="done-slider__perview-items">
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-octavia2019/done1.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-octavia2019/done2.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-octavia2019/done3.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-octavia2019/done4.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-octavia2019/done5.jpeg" style="width: 50px; height: auto;">
-                  </a>
-                  <a class="done-slider__perviews-item" href="#">
-                    <img src="images/done-octavia2019/done6.jpeg" style="width: 50px; height: auto;">
-                  </a>
+
+                  <img class="done-slider__perviews-item" src="images/done-octavia2019/done1.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+                  <img class="done-slider__perviews-item" src="images/done-octavia2019/done2.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+                  <img class="done-slider__perviews-item" src="images/done-octavia2019/done3.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+                  <img class="done-slider__perviews-item" src="images/done-octavia2019/done4.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+                  <img class="done-slider__perviews-item" src="images/done-octavia2019/done5.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
+                  <img class="done-slider__perviews-item" src="images/done-octavia2019/done6.jpeg"
+                    style="width: 50px; height: auto;" alt="auto">
+
                 </div>
               </div>
 
@@ -1296,6 +1342,12 @@
             <div class="done-slider__button-prev swiper-button-prev"></div>
             <div class="done-slider__button-next swiper-button-next"></div>
           </div>
+        </div>
+        <div class="done-zoom">
+
+
+          <img class="done-zoom__img" src="images/done-ceed2018/done1.jpeg" alt="photo">
+
         </div>
       </div>
     </section>
@@ -1376,6 +1428,8 @@
           <div class="advantages__btn-call">
             <button class="popup__button advantages__button">Подобрать авто</button>
           </div>
+        </div>
+      </div>
     </section>
     <footer id="footer" class="footer">
       <div class="container">
@@ -1389,16 +1443,16 @@
               <p class="footer__tel-title">Телефон:</p>
               <p class="footer__tel-text"><a href="tel:+79880830923">+7 (988) 083-09-23</a></p>
             </div>
-            
+
           </div>
           <div class="footer__section footer__middle-section">
             <div class="footer__items-link">
               <a href="#" class="footer__item-link">Мы проверяем</a>
               <a href="#" class="footer__item-link">Стоимость</a>
               <a href="#" class="footer__item-link">Отзывы</a>
-               <a href="#" class="footer__item-link">Блог</a>
+              <a href="#" class="footer__item-link">Блог</a>
               <a href="#" class="footer__item-link">Контакты</a>
-             
+
             </div>
           </div>
           <div class="footer__section footer__bottom-section">
@@ -1407,8 +1461,7 @@
                 <img src="images/logo.svg" class="footer__logo-img" alt="Логотип">
               </a>
               <div class="footer__copyright">
-                <p class="footer__copyright-title">ArtAuto.рф 2020-2023 &#9426</script>
-                </p>
+                <p class="footer__copyright-title">ArtAuto.рф 2020-2023 &#9426;</p>
                 <p class="footer__copyright-text">Копирование любых частей сайта без разрешения владельцев авторских
                   прав
                   запрещено.</p>
@@ -1420,7 +1473,7 @@
       </div>
     </footer>
     <div class="popup__bg">
-      <form class="popup" action="#" method="get">
+      <form id="tg" class="popup">
         <div class="popup__content">
           <button class="popup__close">&#10006;</button>
           <div class="popup__title">
@@ -1430,23 +1483,58 @@
             <p>Оставьте заявку, мы свяжемся с Вами и поможем в подборе автомобиля</p>
           </div>
           <label>
-            <input tabindex="1" name="username" type="text">
-            <div class="popup__label-text">Ваше имя</div>
+            <input tabindex="1" name="username" type="text" required>
+            <span class="popup__label-text">Ваше имя</span>
           </label>
           <label>
-            <input data-tel-input tabindex="2" name="usertel" type="tel">
-            <div class="popup__label-text">Номер телефона</div>
+            <input data-tel-input tabindex="2" name="usertel" type="tel" required>
+            <span class="popup__label-text">Номер телефона</span>
           </label>
           <button type="submit" class="popup__btn">Отправить</button>
+
           <p class="popup__political-safety">Нажимая на кнопку, Вы даёте согласие на <a href="#">обработку персональных
               данных</a></p>
         </div>
+      </form>
+      <div class="popup__success">
+        <img class="popup__success-img" src="images/svg/icon/success.svg" alt="success">
+        <p class="popup__success-text">Мы скоро Вам перезвоним!</p>
+      </div>
+      <div class="popup__error">
+        <img class="popup__error-img" src="images/svg/icon/error.svg" alt="error">
+        <p class="popup__error-text">Ошибка!<br>Перезагрузите страницу!<br></p>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <div class="social-icons">
+    <div class="social-icons__wrapper">
+      <button class="social-icons__main-btn">
+        <img src="images/svg/icon/message.svg" alt="social-icon">
+      </button>
+      <div class="social-icons__dropdown">
+        <a href="https://instagram.com/artur_arakelyan?igshid=NTc4MTIwNjQ2YQ==" class="social-icons__btns">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://t.me/Artur_avtopodbor" class="social-icons__btns">
+          <i class="fab fa-telegram"></i>
+        </a>
+        <a href="https://wa.me/79880830923" class="social-icons__btns">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+
     </div>
   </div>
-  </form>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
-  </div>
 </body>
 
 </html>
