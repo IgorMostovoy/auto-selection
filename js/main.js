@@ -116,6 +116,16 @@ const costSwiperMobile = new Swiper(".cost__swiper", {
   },
 });
 
+const blogSwiper = new Swiper(".blog__swiper", {
+  speed: 500,
+  loop: true,
+  spaceBetween: 5,
+  autoplay: {
+    delay: 3000,
+    
+  },
+});
+
 //Функция анимации диаграмм;
 function animateDiagram() {
   const sections = document.querySelector(".diagram-pie__items");
@@ -137,6 +147,13 @@ function animateDiagram() {
   observer.observe(sections);
 }
 animateDiagram();
+
+
+
+
+
+
+
 
 //Функция input номера телефона
 document.addEventListener("DOMContentLoaded", function () {
