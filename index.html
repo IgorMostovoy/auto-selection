@@ -106,7 +106,7 @@
             </ul>
             <div class=" header__content-btn">
               <button class="popup__button header__button header__choose-btn">подобрать авто</button>
-              <button class=" header__button header__services-btn">наши услуги</button>
+              <a href="#cost" class=" header__button header__services-btn">наши услуги</a>
             </div>
 
           </div>
@@ -690,9 +690,11 @@
                 <h3 class="reviews-slide__name">Олег</h3>
                 <p class="reviews-slide__text">Присмотрел audi Q5, проверил сам по автотеке, всё было замечательно,
                   продавец по телефону убеждал, что со всем остальным тоже всё хорошо. Друг посоветовал обратиться в
-                  ArtAuto для помощи в осмотре, так как я не особо понимаю в авто)
+                  ArturAuto
+ для помощи в осмотре, так как я не особо понимаю в авто)
                   По итогу я очень удивился, когда оказалось, на машине нет живого места, ещё пробег скручен. В общем от
-                  души благодарю за то, что уберег от такой покупки. Далее буду подбирать себе авто с помощью ArtAuto.
+                  души благодарю за то, что уберег от такой покупки. Далее буду подбирать себе авто с помощью ArturAuto
+.
                 </p>
               </div>
               <div class="reviews-slider__slide swiper-slide">
@@ -703,7 +705,8 @@
               </div>
               <div class="reviews-slider__slide swiper-slide">
                 <h3 class="reviews-slide__name">Ростислав</h3>
-                <p class="reviews-slide__text">После покупки прошло 4 месяца и уже могу сказать, что обращение в ArtAuto
+                <p class="reviews-slide__text">После покупки прошло 4 месяца и уже могу сказать, что обращение в ArturAuto
+
                   оправдало себя.
                   Выбирал услугу под ключ BMW x3 для жены. При осмотре нашли некритичные косяки, из-за которых Артур
                   очень
@@ -714,20 +717,23 @@
                 <h3 class="reviews-slide__name">Владимир</h3>
                 <p class="reviews-slide__text">Добрый день, воспользовался услугой подбора в сентябре 2022 года, хотел
                   именно Октавию 3 поколения рестайлинг, искали почти месяц по причине, что хороших живых вариантов в
-                  Краснодаре не было. ArtAuto нашли отличный вариант аж в Ростове. В итоге нашли Октавию с небольшим
+                  Краснодаре не было. ArturAuto
+ нашли отличный вариант аж в Ростове. В итоге нашли Октавию с небольшим
                   пробегом, в идеальном техническом состоянии. Плюс серого цвета (как я и хотел).
                   Огромное спасибо, теперь только через вас буду машины брать.</p>
               </div>
               <div class="reviews-slider__slide swiper-slide">
                 <h3 class="reviews-slide__name">Игорь</h3>
-                <p class="reviews-slide__text">Хочу выразить благодарность ArtAuto за отличный подбор автомобиля. Нужен
+                <p class="reviews-slide__text">Хочу выразить благодарность ArturAuto
+ за отличный подбор автомобиля. Нужен
                   был Kia Rio 3. Автомобиль, который был найден для меня, оказался в отличном состоянии для своих лет и
                   с
                   1 владельцем. Большое спасибо!</p>
               </div>
               <div class="reviews-slider__slide swiper-slide">
                 <h3 class="reviews-slide__name">Давид</h3>
-                <p class="reviews-slide__text">Обратился в ArtAuto по совету друга. До этого имел опыт общения с другим
+                <p class="reviews-slide__text">Обратился в ArturAuto
+ по совету друга. До этого имел опыт общения с другим
                   автоподборщиком, разница колоссальная. Артур сразу выявил неполадки. Респект.</p>
               </div>
             </div>
@@ -1508,7 +1514,7 @@
             <div class="footer__items-link">
               <a href="#check" class="footer__item-link">Мы проверяем</a>
               <a href="#cost" class="footer__item-link">Стоимость</a>
-              <a href="#reviews" class="footer__item-link">Отзывы</a>
+              <a href="#reviews" class="footer__item-link">Отзывы </a>
               <a href="#blog" class="footer__item-link">Наш Instagram</a>
               <a href="#footer" class="footer__item-link">Контакты</a>
 
@@ -1520,12 +1526,13 @@
                 <img src="images/logo.svg" class="footer__logo-img" alt="Логотип">
               </a>
               <div class="footer__copyright">
-                <p class="footer__copyright-title">ArtAuto.рф 2020-2023 &#9426;</p>
+                <p class="footer__copyright-title">ArturAuto
+.рф 2020-2023 &#9426;</p>
                 <p class="footer__copyright-text">Копирование любых частей сайта без разрешения владельцев авторских
                   прав
                   запрещено.</p>
               </div>
-              <a href="#" class="footer__confidicional">Политика конфидециональности</a>
+              <a href="privacy.html" class="footer__confidicional">Политика конфидециональности</a>
             </div>
           </div>
         </div>
@@ -1542,16 +1549,16 @@
             <p>Оставьте заявку, мы свяжемся с Вами и поможем в подборе автомобиля</p>
           </div>
           <label>
-            <input tabindex="1" name="username" type="text" required>
+            <input id="username" tabindex="1" name="username" type="text" required>
             <span class="popup__label-text">Ваше имя</span>
           </label>
           <label>
-            <input data-tel-input tabindex="2" name="usertel" type="tel" required>
+            <input id="usertel" data-tel-input tabindex="2" name="usertel" type="tel" required>
             <span class="popup__label-text">Номер телефона</span>
           </label>
-          <button type="submit" class="popup__btn">Отправить</button>
+          <button id="btn" type="submit" class="popup__btn">Отправить</button>
 
-          <p class="popup__political-safety">Нажимая на кнопку, Вы даёте согласие на <a href="#">обработку персональных
+          <p class="popup__political-safety">Нажимая на кнопку, Вы даёте согласие на <a href="privacy.html">обработку персональных
               данных</a></p>
         </div>
       </form>

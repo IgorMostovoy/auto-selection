@@ -1562,6 +1562,8 @@ body {
   }
 }
 
+
+
 @media (max-height: 768px) {
   .header__content {
     padding-top: 50px;
@@ -2124,6 +2126,7 @@ body {
   .header__content-inner {
     margin-left: 0;
     padding-top: 80px;
+    margin-bottom: 30px;
   }
   .header__top-inner {
     padding-bottom: 20px;
@@ -2140,9 +2143,12 @@ body {
 
   .header__content-btn {
     display: block;
+    padding-bottom: 20px;
   }
 
   .header__button {
+    text-align: center;
+    display: block;
     width: 100%;
     font-size: 26px;
     margin-bottom: 20px;
@@ -2150,6 +2156,7 @@ body {
     padding: 25px 0;
     margin-left: 0;
     margin-top: 0;
+    
   }
 
   .header__choose-btn {

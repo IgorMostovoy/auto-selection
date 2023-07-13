@@ -150,11 +150,6 @@ animateDiagram();
 
 
 
-
-
-
-
-
 //Функция input номера телефона
 document.addEventListener("DOMContentLoaded", function () {
   let phoneInputs = document.querySelectorAll("input[data-tel-input]");
@@ -330,7 +325,6 @@ document.getElementById('tg').addEventListener('submit',function(e){
     text:message
   })
 
- 
   .then((res) =>{
     // this.username.value="";
     // this.usertel.value ="";
@@ -343,10 +337,8 @@ document.getElementById('tg').addEventListener('submit',function(e){
     error.style.display = "block";
     timeoutPopup = window.setTimeout(closePopup,2000);
   })
-
   
 })
-
 
 //zoom-photo
 document.addEventListener("DOMContentLoaded", function () {
@@ -365,3 +357,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 })
+
+
