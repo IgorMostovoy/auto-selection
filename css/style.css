@@ -393,6 +393,84 @@ body {
     0 0.4em 0.9em -0.2em rgba(255, 255, 255, 0.4);
 }
 
+.blog{
+   background-color: rgba(99, 29, 27, 0.08);
+}
+
+.blog__inner {
+  
+  display: flex;
+  width: 90%;
+  position: relative;
+ 
+}
+
+.blog__car {
+  background-image: url(../images/images-blog/car.png);
+  background-size: cover;
+  width: 500px;
+  height: 220px;
+  position: absolute;
+  top: 320px;
+  right: 0;
+}
+
+.blog__img {
+  position: relative;
+  background-image: url(../images/images-blog/blog.png);
+  width: 550px;
+  margin-left: 70px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 700px;
+  background-position: center;
+  display: inline-block;
+  box-sizing: border-box;
+  
+}
+
+.blog__swiper {
+  transform: translateY(3%);
+  width: 55%;
+  height: 92%;
+  border-radius: 37px;
+}
+
+.blog__info-text-title {
+  font-size: 16px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.blog__consul-btn {
+  padding: 8px;
+}
+
+.blog__insta-btn {
+  color: #ffffff;
+  font-size: 18px;
+  border: 2px solid #cb333b;
+  background: #cb333b;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s all;
+  box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.15),
+    0 0.4em 0.5em -0.2em rgba(0, 0, 0, 0.4);
+  padding: 9px;
+  margin-bottom: 30px;
+  font-family: "Inter", sans-serif;
+}
+
+.blog__insta-btn:hover {
+  background: #fff;
+  color: #000000;
+  transition: 0.5s all;
+}
+
+.blog__insta-btn:active {
+  transition: 0.5s all;
+  box-shadow: none;
+}
 .check {
   padding-bottom: 50px;
 }
@@ -898,6 +976,7 @@ body {
   animation: p 2s 0.2s both;
 }
 
+
 @property --percentage {
   syntax: "<number>";
   inherits: true;
@@ -909,7 +988,11 @@ body {
     --percentage: 0;
   }
 }
-
+@-webkit-keyframes z_mob_phone_anim {
+  from {
+    --percentage: 0;
+  }
+}
 .done {
   background-color: rgba(99, 29, 27, 0.08);
 }
@@ -1096,82 +1179,11 @@ body {
   padding: 10px 25px;
 }
 
-.blog__inner {
-  margin-bottom: 50px;
-  display: flex;
-  width: 90%;
-  position: relative;
-}
 
-.blog__car {
-  background-image: url(../images/images-blog/car.png);
-  background-size: cover;
-  width: 500px;
-  height: 220px;
-  position: absolute;
-  top: 320px;
-  right: 0;
-}
 
-.blog__img {
-  position: relative;
-  background-image: url(../images/images-blog/blog.png);
-  width: 550px;
-  margin-left: 70px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 700px;
-  background-position: center;
-  display: inline-block;
-  box-sizing: border-box;
-}
 
-.blog__swiper {
-  transform: translateY(3%);
-  width: 55%;
-  height: 92%;
-  border-radius: 37px;
-}
 
-.blog__info-text-title {
-  font-size: 16px;
-  margin-top: 100px;
-  margin-bottom: 50px;
-}
 
-.blog__consul-btn {
-  padding: 8px;
-}
-
-.blog__insta-btn {
-  color: #000000;
-  font-size: 18px;
-  border: 2px solid #cbcaca9c;
-  background: #cbcaca9c;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: 0.5s all;
-  box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.15),
-    0 0.4em 0.5em -0.2em rgba(0, 0, 0, 0.4);
-  padding: 9px;
-  font-family: "Inter", sans-serif;
-}
-
-.blog__insta-btn:hover {
-  background: #fff;
-  color: #000000;
-  transition: 0.5s all;
-}
-
-.blog__insta-btn:active {
-  transition: 0.5s all;
-  box-shadow: none;
-}
-
-.blog__info-text-subtitle {
-  margin-top: 30px;
-  font-size: 16px;
-}
 
 .footer {
   background: url("../images/font3.jpg") no-repeat center center;
@@ -1763,7 +1775,7 @@ body {
   }
 
   .blog__inner {
-    margin-bottom: 50px;
+    
     display: flex;
     width: 100%;
   }
@@ -2051,7 +2063,7 @@ body {
     font-size: 14px;
   }
   .blog__inner {
-    margin-bottom: 50px;
+   
     display: flex;
     width: 100%;
   }
@@ -2126,7 +2138,7 @@ body {
   .header__content-inner {
     margin-left: 0;
     padding-top: 80px;
-    margin-bottom: 30px;
+   
   }
   .header__top-inner {
     padding-bottom: 20px;
@@ -2175,20 +2187,23 @@ body {
   .menu {
     position: absolute;
     right: 0;
-    top: 0;
+    top: -585px;
     width: 100%;
     background: rgba(5, 5, 5, 0.833);
     padding: 20px;
     transition: transform 0.5s;
     will-change: transform;
-    height: 100vh;
+    height: 70vh;
   }
+ 
+
+  
   .menu__list-item + .menu__list-item {
     margin-left: 0;
   }
   .menu__list-item {
-    /* text-align: center; */
-    top: 100px;
+   
+    top: 50px;
   }
   .menu__list {
     display: block;
@@ -2202,7 +2217,7 @@ body {
   }
 
   .header.open .menu {
-    transform: translateY(-100%);
+    transform: translateY(100%);
   }
 
   .header__callback {
@@ -2550,7 +2565,7 @@ body {
   }
 
   .blog__inner {
-    margin-bottom: 50px;
+    
     display: flex;
     width: 100%;
   }
@@ -2764,7 +2779,7 @@ body {
   }
 
   .blog__inner {
-    margin-bottom: 50px;
+   
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -2788,7 +2803,7 @@ body {
   }
 
   .blog__consul-btn {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     width: 100%;
   }
   .blog__info-text-title {
@@ -2829,6 +2844,18 @@ body {
     font-size: 26px;
   }
 
+ 
+.menu{
+  
+  height:40vh;
+}
+
+.menu__list-item:hover::before {
+  width:max-content;
+}
+  .menu__list-item{
+    
+  }
   .reviews-slider {
     max-width: 600px;
     margin: 0 auto;
@@ -3076,16 +3103,25 @@ body {
   }
 
   .header__burger-btn {
-    width: 35px;
+    width: 43px;
     height: 35px;
   }
 
   .header__burger-btn span {
-    width: 25px;
-    left: 3.5px;
+    width: 28px;
+    left: 5.4px;
     top: 16px;
   }
 
+  .menu {
+    height: 45vh;
+    top: -380px;
+    
+  }
+ 
+  .header.open .menu {
+    transform: translateY(100%);
+  }
   .header__callback {
     margin: 0;
   }
@@ -3130,7 +3166,7 @@ body {
 
   .header__services-btn {
     margin-top: 0;
-    margin-bottom: 40px;
+    
   }
 
   .check__phone-list {
@@ -3423,5 +3459,8 @@ body {
   
   .blog__info-text-title {
     margin-top: 0;
+  }
+  .title.blog__title{
+    padding-bottom: 0;
   }
 }

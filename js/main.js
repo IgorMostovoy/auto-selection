@@ -65,20 +65,18 @@ const doneSwiper = new Swiper(".done-slider", {
   },
   effect: "cards",
   speed: 700,
-  
 });
 
 const doneSwiperMoble = new Swiper(".done-slider-mobile", {
   effect: "coverflow",
   grabCursor: true,
- 
+
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
     depth: 100,
     modifier: 5,
     slideShadows: true,
-    
   },
   speed: 700,
   slidesPerView: "auto",
@@ -122,7 +120,6 @@ const blogSwiper = new Swiper(".blog__swiper", {
   spaceBetween: 5,
   autoplay: {
     delay: 3000,
-    
   },
 });
 
@@ -147,8 +144,6 @@ function animateDiagram() {
   observer.observe(sections);
 }
 animateDiagram();
-
-
 
 //Функция input номера телефона
 document.addEventListener("DOMContentLoaded", function () {
@@ -257,7 +252,7 @@ function openPopup() {
 openPopup();
 
 //Бургер меню
-document.addEventListener("DOMContentLoaded", function () {
+
   document
     .querySelector(".header__burger-btn")
     .addEventListener("click", function () {
@@ -266,7 +261,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".menu").addEventListener("click", (e) => {
     e._isClickWithInMenu = true;
   });
-});
+
 
 document.addEventListener("DOMContentLoaded", function () {
   const dropButton = document.querySelector(".social-icons__main-btn");
@@ -288,74 +283,72 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-   const doneImageMini = document.querySelectorAll(".done-slider__perviews-item");
-  
-  doneImageMini.forEach(el => {
-    el.addEventListener('click', (event) => {
+  const doneImageMini = document.querySelectorAll(
+    ".done-slider__perviews-item"
+  );
+
+  doneImageMini.forEach((el) => {
+    el.addEventListener("click", (event) => {
       let container = event.currentTarget.closest(".done-slider__slide");
-      let displayHere = container.querySelector('.done-slider__img');
+      let displayHere = container.querySelector(".done-slider__img");
       displayHere.src = event.currentTarget.src;
     });
   });
-
 });
 
 //Отправка формы
 const TOKEN = "6206884622:AAHojBrtw_d2dd7ACzflJGNg4DNPjTt4utQ";
 const CHAT_ID = "-1001940775891";
-const URL_API = `https://api.telegram.org/bot${ TOKEN }/sendMessage`;
-const success = document.querySelector('.popup__success');
-const popup = document.querySelector('.popup');
-const popupBg = document.querySelector('.popup__bg');
-const error = document.querySelector('.popup__error')
+const URL_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+const success = document.querySelector(".popup__success");
+const popup = document.querySelector(".popup");
+const popupBg = document.querySelector(".popup__bg");
+const error = document.querySelector(".popup__error");
 let timeoutPopup;
-function closePopup(){
-  popupBg.classList.remove('active')
+function closePopup() {
+  popupBg.classList.remove("active");
 }
-document.getElementById('tg').addEventListener('submit',function(e){
+document.getElementById("tg").addEventListener("submit", function (e) {
   e.preventDefault();
 
   let message = `<b>Артур, у тебя заявка с сайта!</b>\n`;
-  message += `<b>Отправитель: </b> ${ this.username.value }\n`;
-  message += `<b>Номер телефона: </b> ${ this.usertel.value }`;
-  
-  axios.post(URL_API, {
-    chat_id: CHAT_ID,
-    parse_mode: 'html',
-    text:message
-  })
+  message += `<b>Отправитель: </b> ${this.username.value}\n`;
+  message += `<b>Номер телефона: </b> ${this.usertel.value}`;
 
-  .then((res) =>{
-    // this.username.value="";
-    // this.usertel.value ="";
-    popup.style.display = "none";
-    success.style.display = "block";
-    timeoutPopup = window.setTimeout(closePopup,2000);
-  })
-  .catch((err) =>{
-    popup.style.display = "none";
-    error.style.display = "block";
-    timeoutPopup = window.setTimeout(closePopup,2000);
-  })
-  
-})
+  axios
+    .post(URL_API, {
+      chat_id: CHAT_ID,
+      parse_mode: "html",
+      text: message,
+    })
+
+    .then((res) => {
+      // this.username.value="";
+      // this.usertel.value ="";
+      popup.style.display = "none";
+      success.style.display = "block";
+      timeoutPopup = window.setTimeout(closePopup, 2000);
+    })
+    .catch((err) => {
+      popup.style.display = "none";
+      error.style.display = "block";
+      timeoutPopup = window.setTimeout(closePopup, 2000);
+    });
+});
 
 //zoom-photo
 document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll('.done-slider__img').forEach(img =>{
-    img.onclick =()=>{
-      document.querySelector('.done-zoom').style.display = "block";
-      document.querySelector('.done-zoom__img').src = img.getAttribute('src');
-    }
+  document.querySelectorAll(".done-slider__img").forEach((img) => {
+    img.onclick = () => {
+      document.querySelector(".done-zoom").style.display = "block";
+      document.querySelector(".done-zoom__img").src = img.getAttribute("src");
+    };
   });
-  const doneZoom = document.querySelector('.done-zoom');
+  const doneZoom = document.querySelector(".done-zoom");
 
   document.addEventListener("click", (e) => {
     if (e.target === doneZoom) {
       doneZoom.style.display = "none";
-      
     }
+  });
 });
-})
-
-
